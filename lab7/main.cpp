@@ -1,4 +1,4 @@
-#include "test.h"
+#include "functions.hpp"
 
 int main() {
     int n;
@@ -11,11 +11,11 @@ int main() {
     zal::read_matrix(A, n);
 
     int max_element, min_element;
-    //zal::find_max_min(A, n, max_element, min_element);
+    zal::find_max_min(A, n, max_element, min_element);
 
     if (max_element + min_element == 0) {
-       // zal::sort_rows(A, n);
-        //zal::print_matrix(A, n);
+        zal::sort_rows(A, n);
+        zal::print_matrix(A, n);
     } else {
         std::cout << "Сумма наибольшего и наименьшего элементов не равна нулю." << std::endl;
     }
